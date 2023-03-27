@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300&display=swap');
+
+@font-face {
+    font-family: Didonesque-Roman;
+    /* Имя шрифта */
+    src: url('./fonts/FontsFree-Net-Didonesque-Roman.ttf');
+    /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Trade Gothic LT Bold;
+    /* Имя шрифта */
+    src: url('./fonts/Trade\ Gothic\ LT\ Bold.ttf');
+    /* Путь к файлу со шрифтом */
+}
+
+
+
+:root {
+    --font-family-primary: 'Montserrat', sans-serif;
+    --font-family-secondary: Trade Gothic LT Bold, sans-serif;
+    --font-famliy-text: Didonesque-Roman, sans-serif;
+
+    --color-primary: #fff;
+    --color-secondary: #000;
+    --color-third: #EFEFEF;
+
+    --text-color-primary: #000;
+    --text-color-secondary: #fff;
+    --text-color-third: #B1B1B1;
+
+    --header-link-color: #000000;
+    --header-link-weight: 700;
+    --header-link-font-size: 20px;
+
+    --footer-bg: #000000;
+    --footer-text-color: #fff;
+    --footer-link-font-family: Trade Gothic LT Bold;
+    --footer-link-font-size: 26px;
+
+
+    --h1-font-size: 28px;
+    --h2-font-size: 40px;
+    --h3-font-size: 28px;
+    --h4-font-size: 28px;
+    --h5-font-size: 28px;
+
+    --text-font-size: 16px;
+
+    --slider-tab-size: 18px;
+    --slider-item-title-size: 16px;
+    --slider-item-undertitle-size: 15px;
+    --slider-item-price-size: 16px;
+
+
+    --events-item-title-size: 18px;
+    --events-item-text-size: 16px;
+
+    --main-margin-top: 87px;
+
+    --hover-color: rgba(74, 74, 74, 0.8);
+    ;
+    --hover-footer-link-color: rgba(255, 255, 255, 0.7);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-famliy-text);
+    font-size: var(--text-font-size);
+}
+
+
+h2 {
+    font-size: var(--h2-font-size);
+}
+
+h1,
+h2,
+h3,
+h4,
+.swiper1 .swiper-slide,
+.about p,
+.header-menu-link {
+    font-family: var(--font-family-secondary);
+    text-transform: uppercase;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul,
+p,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+button,
+input,
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    /* overflow-x: hidden; */
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+    flex: 0;
+    z-index: 10;
+    transition: background-color 0.3s ease-out;
+}
+
+main {
+    margin-top: var(--main-margin-top);
+    flex: 1 0 auto;
+
+}
+
+footer {
+    flex: 0 0 auto;
+}
+
+section {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+.logo {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.--custom-logo-font {
+    font-size: 40px;
+    font-family: Didonesque-Roman;
+    font-weight: 400;
+    line-height: 0.9;
+}
+
+.--logo-font {
+    line-height: 0.9;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Trade Gothic LT Bold;
+}
+
+.--logo {
+    line-height: 0.9;
+    font-size: 24px;
+}
+
+.btn-first-style {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid black;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s ease-out, color 0.2s ease-out;
+    font-family: var(--font-family-secondary);
+    display: inline-block;
+}
+
+.btn-first-style:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.container {
+    width: 1440px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: calc(var(--main-margin-top) + 5px) 120px;
+    /* padding-bottom: 0 !important; */
+}
+
+.collage {
+    padding: calc(var(--main-margin-top)) 0;
+}
