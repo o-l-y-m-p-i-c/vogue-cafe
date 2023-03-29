@@ -211,7 +211,22 @@
                             <div class="swiper-slide">Vegetarian</div>
                             <div class="swiper-slide">Desserts</div>
                             <div class="swiper-slide">Brunch</div>
-
+                            <div class="swiper-slide">Test1</div>
+                            <div class="swiper-slide">Test2</div>
+                            <div class="swiper-slide">Test3</div>
+                            <div class="swiper-slide">Test4</div>
+                            <div class="swiper-slide">Test5</div>
+                            <div class="swiper-slide">Test6</div>
+                            <div class="swiper-slide">Test1</div>
+                            <div class="swiper-slide">Test2</div>
+                            <div class="swiper-slide">Test3</div>
+                            <div class="swiper-slide">Test4</div>
+                            <div class="swiper-slide">Test5</div>
+                            <div class="swiper-slide">Test6</div>
+                        </div>
+                        <div class="">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
                     </div>
                     <!-- swiper2 -->
@@ -1047,6 +1062,10 @@
                 // spaceBetween: 20,
                 freeMode: true,
                 loop: false,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
                 onTab: function (swiper) {
                     var n = swiper1.clickedIndex;
                 }
@@ -1069,7 +1088,7 @@
                         var n = swiper.activeIndex;
                         setCurrentSlide($(".swiper1 .swiper-slide").eq(n), n);
                         console.log(swiper.activeIndex)
-                        swiper1.slideTo(n, 500, false);
+                        swiper1.slideTo(n - 1, 500, false);
                     }
                 }
 
@@ -1081,7 +1100,7 @@
                 layoutMode: 'masonry',
                 percentPosition: true,
                 masonry: {
-                    // gutter: 10,
+                    gutter: 10,
                     // columnWidth: 10,
 
                 }
