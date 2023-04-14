@@ -15,11 +15,41 @@
 }
 
 
+@font-face {
+    font-family: 'Adobe Caslon';
+    /* Имя шрифта */
+    src: url('./fonts/AdobeСaslon/ACaslonPro-Regular.otf');
+    /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: 'FB Didot';
+    /* Имя шрифта */
+    src: url('./fonts/Didot/Didot\ Bold.otf');
+    /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: 'Vogue Franklin';
+    /* Имя шрифта */
+    src: url('./fonts/VogueFranklin/VogueFranklin-Demi-Web.woff');
+    /* Путь к файлу со шрифтом */
+}
+
+
+
+
+
 
 :root {
-    --font-family-primary: 'Montserrat', sans-serif;
+    --font-family-primary: 'FB Didot', sans-serif;
+    --font-family-secondary: 'Vogue Franklin', sans-serif;
+    --font-famliy-text: 'Adobe Caslon', sans-serif;
+
+    /* --font-family-primary: 'Montserrat', sans-serif;
     --font-family-secondary: Trade Gothic LT Bold, sans-serif;
-    --font-famliy-text: Didonesque-Roman, sans-serif;
+    --font-famliy-text: Didonesque-Roman, sans-serif; */
+
 
     --color-primary: #fff;
     --color-secondary: #000;
@@ -167,7 +197,8 @@ section {
 
 .--custom-logo-font {
     font-size: 40px;
-    font-family: Didonesque-Roman;
+    font-family: var(--font-family-primary);
+    /* font-family: Didonesque-Roman; */
     font-weight: 400;
     line-height: 0.9;
 }
@@ -176,7 +207,7 @@ section {
     line-height: 0.9;
     font-size: 40px;
     font-weight: 600;
-    font-family: Trade Gothic LT Bold;
+    /* font-family: Trade Gothic LT Bold; */
 }
 
 .--logo {
