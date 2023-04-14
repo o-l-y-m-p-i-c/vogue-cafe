@@ -106,6 +106,7 @@ footer {
 
 .footer-nav-list {
     display: flex;
+    margin: 0 -10px;
     /* justify-content: center; */
     flex-wrap: wrap;
     row-gap: 20px;
