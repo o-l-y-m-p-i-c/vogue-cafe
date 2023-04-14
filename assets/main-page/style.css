@@ -144,16 +144,16 @@ footer {
 .footer-bottom__content .row p {
     line-height: 1.5;
     /* padding-top: 20px; */
-    font-family: 'Montserrat';
-    /* font-family: var(--font-family-primary); */
+    /* font-family: 'Montserrat'; */
+    font-family: var(--font-family-primary);
 }
 
 .footer-bottom__content .row p a {
     font-weight: 600;
     /* color: var(--footer-text-color); */
     color: rgba(255, 255, 255, 0.6);
-    font-family: 'Montserrat';
-    /* font-family: var(--font-family-primary); */
+    /* font-family: 'Montserrat'; */
+    font-family: var(--font-family-primary);
 }
 
 .footer-bottom__content {
