@@ -91,8 +91,8 @@ footer {
 }
 
 .footer {
-    padding: 80px 20px;
-    width: 860px;
+    padding: 80px 120px;
+    width: 1440px;
     max-width: 100%;
     margin: 0 auto;
     /* text-align: center; */
@@ -572,6 +572,11 @@ footer {
 
     .events-item {
         flex-basis: 50%;
+    }
+
+    .footer {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
