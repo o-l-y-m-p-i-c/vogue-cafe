@@ -63,6 +63,7 @@ Header
     padding-right: 22px;
     margin-right: 5px;
     margin-left: 5px;
+    margin-top: -2px;
     border: none;
     position: relative;
     color: var(--text-color-primary);
